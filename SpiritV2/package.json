@@ -1,0 +1,47 @@
+{
+  "name": "SpiritV2Contracts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/acrylicfiddle/SpiritV2Contracts.git",
+  "author": "Sid",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.6.0",
+    "hardhat": "^2.9.3"
+  },
+  "scripts": {
+    "run-node": "hardhat node",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run ./scripts/deploy.js --no-compile --network mainnet",
+    "deployAMM": "hardhat run ./scripts/DeployAMM.js --no-compile --network mainnet",
+    "deployGaugeProxy": "hardhat run ./scripts/DeployGaugeProxy.js --no-compile --network mainnet",
+    "deployVariableGauges": "hardhat run ./scripts/DeployVariableGauges.js --no-compile --network mainnet",
+    "deployStableGauges": "hardhat run ./scripts/DeployStableGauges.js --no-compile --network mainnet",
+    "deployAdminGauges": "hardhat run ./scripts/DeployAdminGauges.js --no-compile --network mainnet",
+    "createVarLP": "hardhat run ./scripts/CreateVariableLPTokens.js --no-compile --network mainnet", 
+    "createStaLP": "hardhat run ./scripts/CreateStableLPTokens.js --no-compile --network mainnet"
+  },
+  "devDependencies": {
+    "@defi-wonderland/smock": "^2.0.7",
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@nomiclabs/hardhat-etherscan": "^2.1.8",
+    "@nomiclabs/hardhat-vyper": "^3.0.0",
+    "@nomiclabs/hardhat-waffle": "^2.0.0",
+    "@types/chai": "^4.2.15",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^14.14.37",
+    "bignumber": "^1.1.0",
+    "bignumber.js": "^9.0.2",
+    "chai": "^4.3.4",
+    "dotenv": "^8.6.0",
+    "ethereum-waffle": "^3.0.0",
+    "ethers": "^5.6.2",
+    "fs": "^0.0.1-security",
+    "hardhat-contract-sizer": "^2.0.3",
+    "mocha": "^9.2.2",
+    "solidity-coverage": "^0.7.20",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  }
+}
